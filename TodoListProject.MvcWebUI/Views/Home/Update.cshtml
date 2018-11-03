@@ -1,0 +1,43 @@
+﻿@model TodoListProject.MvcWebUI.Models.PageModel.TodoUpdatePageModel
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h4>Update</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form  asp-action="Update" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="TodoItem.Id" />
+            <div class="form-group">
+                <label asp-for="TodoItem.Title" class="control-label"></label>
+                <input asp-for="TodoItem.Title" name="Title" class="form-control" />
+                <span asp-validation-for="TodoItem.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="TodoItem.IsComplete" name="IsComplete" /> @Html.DisplayNameFor(model => model.TodoItem.IsComplete)
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" />
+
+                <a href="/Home/Delete/@Model.TodoItem.Id" onclick="return confirm('Are you sure?')" class="btn btn-danger pull-right">Delete</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

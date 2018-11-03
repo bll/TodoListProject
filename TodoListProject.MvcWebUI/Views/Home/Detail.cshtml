@@ -1,0 +1,44 @@
+﻿@model TodoListProject.MvcWebUI.Models.PageModel.TodoDetailPageModel
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h4>Detail</h4>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TodoItem.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TodoItem.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TodoItem.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TodoItem.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TodoItem.IsComplete)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TodoItem.IsComplete)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TodoItem.CompleteDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TodoItem.CompleteDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (!Model.TodoItem.IsComplete) {
+        @Html.ActionLink("Update", "Update", new { id = Model.TodoItem.Id })
+    }
+    
+    <a asp-action="Index">Back to List</a>
+</div>

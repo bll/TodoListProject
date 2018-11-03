@@ -3,7 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListProject.Entities", "TodoListProject.Entities\TodoListProject.Entities.csproj", "{FF463313-8C27-4981-BAAA-3A0714B0B8F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListProject.DataAccess", "TodoListProject.DataAccess\TodoListProject.DataAccess.csproj", "{2B1C628B-3C78-4844-A207-D0B913BD8B5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListProject.Core", "TodoListProject.Core\TodoListProject.Core.csproj", "{8BF2AAAF-1BE9-44F1-8773-9B1FCDFE7F64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListProject.Business", "TodoListProject.Business\TodoListProject.Business.csproj", "{1956BD09-9FBA-404A-AB39-53F084C63154}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListProject.MvcWebUI", "TodoListProject.MvcWebUI\TodoListProject.MvcWebUI.csproj", "{91EDA73A-A9AC-42D8-88D5-1A3D235ED923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoListProject.WebAPI", "TodoListProject.WebAPI\TodoListProject.WebAPI.csproj", "{92966532-110D-40BC-AF6E-920AB86001DB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF463313-8C27-4981-BAAA-3A0714B0B8F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF463313-8C27-4981-BAAA-3A0714B0B8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF463313-8C27-4981-BAAA-3A0714B0B8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF463313-8C27-4981-BAAA-3A0714B0B8F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B1C628B-3C78-4844-A207-D0B913BD8B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B1C628B-3C78-4844-A207-D0B913BD8B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B1C628B-3C78-4844-A207-D0B913BD8B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B1C628B-3C78-4844-A207-D0B913BD8B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF2AAAF-1BE9-44F1-8773-9B1FCDFE7F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF2AAAF-1BE9-44F1-8773-9B1FCDFE7F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF2AAAF-1BE9-44F1-8773-9B1FCDFE7F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF2AAAF-1BE9-44F1-8773-9B1FCDFE7F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1956BD09-9FBA-404A-AB39-53F084C63154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1956BD09-9FBA-404A-AB39-53F084C63154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1956BD09-9FBA-404A-AB39-53F084C63154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1956BD09-9FBA-404A-AB39-53F084C63154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91EDA73A-A9AC-42D8-88D5-1A3D235ED923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EDA73A-A9AC-42D8-88D5-1A3D235ED923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EDA73A-A9AC-42D8-88D5-1A3D235ED923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EDA73A-A9AC-42D8-88D5-1A3D235ED923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92966532-110D-40BC-AF6E-920AB86001DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92966532-110D-40BC-AF6E-920AB86001DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92966532-110D-40BC-AF6E-920AB86001DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92966532-110D-40BC-AF6E-920AB86001DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
